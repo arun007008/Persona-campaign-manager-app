@@ -1,9 +1,7 @@
 import React, { Component, lazy, Suspense } from 'react';
-
-import { Bar, Line } from 'react-chartjs-2';
 import {
   Badge,
-  Button,
+  Button, Form, FormGroup, Label, Input,
   ButtonDropdown,
   ButtonGroup,
   ButtonToolbar,
@@ -21,8 +19,6 @@ import {
   Row,
   Table,
 } from 'reactstrap';
-import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
-import { getStyle, hexToRgba } from '@coreui/coreui/dist/js/coreui-utilities'
 
 class NewCampaign extends Component {
   constructor(props) {
@@ -55,7 +51,35 @@ class NewCampaign extends Component {
 
     return (
       <div className="animated fadeIn">
-        <h3>New Campaign</h3>
+        <Row>
+      <Col xs="12" sm="6" lg="3"><h2> New Campaign</h2></Col>
+      </Row>
+      <Form>
+        <FormGroup row>
+          <Label for="campaignName" sm={2}>Campaign Name</Label>
+          <Col sm={4}>
+            <Input type="text" name="cName" id="campaignName"  />
+          </Col>
+          <Col sm={6}></Col>
+        </FormGroup>
+        <FormGroup row>
+          <Label for="channel" sm={2}>Channel</Label>
+          <Col sm={4}>
+            <Input type="select" name="channel" id="channel" >
+            <option>Email</option>
+            <option>SMS</option>
+            <option>Phone</option>
+            <option>Chat</option>
+            </Input>
+          </Col>
+          <Col sm={6}></Col>
+        </FormGroup>
+        <FormGroup check row>
+          <Col sm={{ size: 10, offset: 2 }}>
+            <Button>Submit</Button>
+          </Col>
+        </FormGroup>
+      </Form>
       </div>
     );
   }

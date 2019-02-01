@@ -1,38 +1,63 @@
 .completed{
     text-align: center;
-    background-color: rgb(243, 236, 236) !important;
+    background-color: rgb(209, 205, 205) !important;
 }
 
 .draft{
     text-align: center;
-    background-color:rgba(174, 174, 174, 0.33) !important;
+    background-color:rgb(218, 187, 160) !important;
 }
 
 .running{
     text-align: center;
-    background-color:#F1F1F1 !important;
+    background-color:rgb(169, 182, 156) !important;
 }
 
 .archived{
     text-align: center;
-    background-color:rgba(174, 174, 174, 0.33) !important;
+    background-color:rgb(131, 128, 128) !important;
 }
 
 .scheduled{
     text-align: center;
-    background-color: #9F9F9F!important;
+    background-color: rgb(214, 187, 187)!important;
 }
 
 .paused{
     text-align: center;
-    background-color: rgb(117, 110, 110) !important;
+    background-color: rgb(201, 201, 161) !important;
 }
 
 .buttonDropdown{
     float: right;
-    background-color: none !important;
-    border-color: none !important;
+    
 }
+
+.searchfield{
+    border-top-style: none !important;
+    border-left-style: none !important;
+    border-right-style: none !important;
+    border-bottom-style: solid !important;
+    background: none !important;
+    border-radius: 0rem !important;
+    border-bottom-color: black !important;
+    
+}
+
+/* .searchfield:focus { 
+    outline: none !important
+    border-top-style: none !important;
+    border-left-style: none !important;
+    border-right-style: none !important;
+    border-bottom-style: solid !important;
+} */
+
+.searchfield:focus{
+    box-shadow: none !important;
+
+
+}
+
 
 
 
