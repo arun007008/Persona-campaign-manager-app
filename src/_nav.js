@@ -5,7 +5,7 @@ export default {
       url: '/dashboard',
       icon: 'cui-dashboard',
       badge: {
-        variant: 'info',
+        variant: 'warning',
       },
     },
     {
